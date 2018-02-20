@@ -1,5 +1,5 @@
 package db_mapping_files;
-// Generated Feb 20, 2018 3:38:57 PM by Hibernate Tools 4.3.1
+// Generated Feb 21, 2018 1:25:15 AM by Hibernate Tools 4.3.1
 
 
 import java.util.Date;
