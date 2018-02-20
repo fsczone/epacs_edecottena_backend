@@ -57,6 +57,26 @@
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                         <div class="form-group">
+                                                            <label for="single-select">Category</label>
+                                                            <select id="single-select" class="form-control">
+                                                                <option>Consulting</option>
+                                                                <option>Educational</option>
+                                                                <option>Clothing</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="single-select">Category</label>
+                                                            <select id="single-select" class="form-control">
+                                                                <option>Consulting</option>
+                                                                <option>Educational</option>
+                                                                <option>Clothing</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
                                                             <label for="normal-input" class="form-control-label">Name</label>
                                                             <input class="form-control" placeholder="English">
                                                         </div>
@@ -92,16 +112,10 @@
                                                             <input class="form-control" placeholder="Japanese">
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-6">
+                                                    <div class="col-md-12">
                                                         <div class="form-group">
                                                             <label for="normal-input" class="form-control-label">Price</label>
                                                             <input class="form-control" placeholder="US Dollar">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <label for="normal-input" class="form-control-label">Price</label>
-                                                            <input class="form-control" placeholder="Japanese yen">
                                                         </div>
                                                     </div>
                                                 </div>

@@ -40,7 +40,7 @@
                             <span>L</span>ogin
                             <span>F</span>orm</h1>-->
 
-            <img src="imgs/Epacs_Logo_JP.png" style="width: 200px; height: auto">
+            <img src="../com.fundamental/images/admin_login/Epacs_Logo_JP.png" style="width: 200px; height: auto">
 
         </div>
         <!---728x90--->
