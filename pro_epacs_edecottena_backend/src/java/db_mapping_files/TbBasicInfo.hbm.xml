@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 20, 2018 3:38:58 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="db_mapping_files.TbBasicInfo" table="tb_basic_info" catalog="db_epacs_system" optimistic-lock="version">
+        <id name="biId" type="java.lang.Integer">
+            <column name="bi_id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="tbUserAccount" class="db_mapping_files.TbUserAccount" fetch="select">
+            <column name="tb_user_account_ua_id" not-null="true" />
+        </many-to-one>
+        <property name="biFirstName" type="string">
+            <column name="bi_first_name" length="100" />
+        </property>
+        <property name="biLastName" type="string">
+            <column name="bi_last_name" length="100" />
+        </property>
+        <property name="biJapanName" type="string">
+            <column name="bi_japan_name" />
+        </property>
+        <property name="biStatus" type="string">
+            <column name="bi_status" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

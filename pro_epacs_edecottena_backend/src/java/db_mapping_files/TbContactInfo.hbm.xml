@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 20, 2018 3:38:58 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="db_mapping_files.TbContactInfo" table="tb_contact_info" catalog="db_epacs_system" optimistic-lock="version">
+        <id name="biId" type="java.lang.Integer">
+            <column name="bi_id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="tbUserAccount" class="db_mapping_files.TbUserAccount" fetch="select">
+            <column name="tb_user_account_ua_id" not-null="true" />
+        </many-to-one>
+        <property name="ciHomeNumber" type="string">
+            <column name="ci_home_number" length="45" />
+        </property>
+        <property name="ciMobileNumber" type="string">
+            <column name="ci_mobile_number" length="45" />
+        </property>
+        <property name="ciEmailAddress" type="string">
+            <column name="ci_email_address" length="200" />
+        </property>
+        <property name="ciHomeAddress" type="string">
+            <column name="ci_home_address" />
+        </property>
+        <property name="ciStatus" type="string">
+            <column name="ci_status" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

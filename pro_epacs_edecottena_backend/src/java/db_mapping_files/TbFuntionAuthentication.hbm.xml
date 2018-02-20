@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 20, 2018 3:38:58 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="db_mapping_files.TbFuntionAuthentication" table="tb_funtion_authentication" catalog="db_epacs_system" optimistic-lock="version">
+        <id name="faId" type="java.lang.Integer">
+            <column name="fa_id" />
+            <generator class="identity" />
+        </id>
+        <property name="faFuntionTitle" type="string">
+            <column name="fa_funtion_title" length="100" />
+        </property>
+        <property name="faStatus" type="string">
+            <column name="fa_status" length="45" />
+        </property>
+        <set name="tbPageAuthenticationHasTbFuntionAuthentications" table="tb_page_authentication_has_tb_funtion_authentication" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="tb_funtion_authentication_fa_id" not-null="true" />
+            </key>
+            <one-to-many class="db_mapping_files.TbPageAuthenticationHasTbFuntionAuthentication" />
+        </set>
+    </class>
+</hibernate-mapping>
