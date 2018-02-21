@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-<!-- Generated Feb 21, 2018 1:25:17 AM by Hibernate Tools 4.3.1 -->
+<!-- Generated Feb 21, 2018 9:48:57 PM by Hibernate Tools 4.3.1 -->
 <hibernate-mapping>
-    <class name="db_mapping_files.TbUserRole" table="tb_user_role" catalog="db_epacs_system" optimistic-lock="version">
+    <class name="db_mapping_files.TbUserRole" table="tb_user_role" catalog="db_epacs_n31589a3a33c5dca256m8650910ed" optimistic-lock="version">
         <id name="urId" type="java.lang.Integer">
             <column name="ur_id" />
             <generator class="identity" />
