@@ -25,7 +25,7 @@
 
 
     </head>
-    <body class="sidebar-fixed header-fixed">
+    <body class="sidebar-fixed  header-fixed sidebar-hidden">
         <div class="page-wrapper">
 
             <%@include file="com.component/common/header/admin_header.jsp" %>
