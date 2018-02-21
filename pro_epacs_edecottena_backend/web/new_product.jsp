@@ -11,7 +11,6 @@
         <meta charset="UTF-8">
         <title>Admin - New Product</title>
 
-        <link href="com.fundamental/css/admin_styles.css" rel="stylesheet" type="text/css"/>
         <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
         <!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
         <!--<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>-->
@@ -19,6 +18,7 @@
         <link rel="stylesheet" href="com.fundamental/vendor/simple-line-icons/css/simple-line-icons.css">
         <link rel="stylesheet" href="com.fundamental/vendor/font-awesome/css/fontawesome-all.min.css">
         <link href="com.fundamental/css/my_styles.css" rel="stylesheet" type="text/css"/>
+        <link href="com.fundamental/css/admin_styles.css" rel="stylesheet" type="text/css"/>
 
 
 
@@ -55,17 +55,7 @@
 
                                             <div class="col-md-8">
                                                 <div class="row">
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <label for="single-select">Category</label>
-                                                            <select id="single-select" class="form-control">
-                                                                <option>Consulting</option>
-                                                                <option>Educational</option>
-                                                                <option>Clothing</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
+                                                    <div class="col-md-12">
                                                         <div class="form-group">
                                                             <label for="single-select">Category</label>
                                                             <select id="single-select" class="form-control">
@@ -130,18 +120,10 @@
                                                         <div class="imageupload panel panel-default" id="iu1">
                                                             <div class="panel-heading clearfix">
                                                                 <h3 class="panel-title pull-left">Image 1</h3>
-                                                                <div class="btn-group pull-right">
-                                                                    <button type="button" class="btn btn-default active">File</button>
-                                                                    <!--<button type="button" class="btn btn-default">URL</button>-->
-                                                                </div>
-                                                                <div class="btn-group pull-right">
-                                                                    <!--<button type="button" class="btn btn-default active">File</button>-->
-                                                                    <button type="button" class="btn btn-default">URL</button>
-                                                                </div>
                                                             </div>
                                                             <div class="file-tab panel-body mypanel-body">
                                                                 <div class="row">
-                                                                    <label class="btn btn-default btn-file">
+                                                                    <label class="btn btn-warning btn-file browse_brn">
                                                                         <span>Browse</span>
                                                                         <!--The file is stored here.--> 
                                                                         <input type="file" name="image-file">
@@ -149,24 +131,8 @@
                                                                     <button type="button" class="btn btn-default">Remove</button>
                                                                 </div>
                                                             </div>
-                                                            <div class="url-tab panel-body mypanel-body">
-                                                                <div class="input-group">
-                                                                    <input type="text" class="form-control hasclear" placeholder="Image URL">
-                                                                    <div class="input-group-btn">
-                                                                        <button type="button" class="btn btn-default">Submit</button>
-                                                                    </div>
-                                                                </div>
-                                                                <button type="button" class="btn btn-default">Remove</button>
-                                                                <!--The URL is stored here.--> 
-                                                                <input type="hidden" name="image-url">
-                                                            </div>
+                                                            <button type="button" id="imageupload-reset1" class="btn btn-primary">Reset</button>
                                                         </div>
-
-                                                        <!--bootstrap-imageupload method buttons.--> 
-                                                        <button type="button" id="imageupload-disable1" class="btn btn-danger">Disable</button>
-                                                        <button type="button" id="imageupload-enable1" class="btn btn-success">Enable</button>
-                                                        <button type="button" id="imageupload-reset1" class="btn btn-primary">Reset</button>
-
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4">
@@ -175,18 +141,10 @@
                                                         <div class="imageupload panel panel-default" id="iu2">
                                                             <div class="panel-heading clearfix">
                                                                 <h3 class="panel-title pull-left">Image 2</h3>
-                                                                <div class="btn-group pull-right">
-                                                                    <button type="button" class="btn btn-default active">File</button>
-                                                                    <!--<button type="button" class="btn btn-default">URL</button>-->
-                                                                </div>
-                                                                <div class="btn-group pull-right">
-                                                                    <!--<button type="button" class="btn btn-default active">File</button>-->
-                                                                    <button type="button" class="btn btn-default">URL</button>
-                                                                </div>
                                                             </div>
                                                             <div class="file-tab panel-body mypanel-body">
                                                                 <div class="row">
-                                                                    <label class="btn btn-default btn-file">
+                                                                    <label class="btn btn-default btn-file browse_brn">
                                                                         <span>Browse</span>
                                                                         <!--The file is stored here.--> 
                                                                         <input type="file" name="image-file">
@@ -194,24 +152,8 @@
                                                                     <button type="button" class="btn btn-default">Remove</button>
                                                                 </div>
                                                             </div>
-                                                            <div class="url-tab panel-body mypanel-body">
-                                                                <div class="input-group">
-                                                                    <input type="text" class="form-control hasclear" placeholder="Image URL">
-                                                                    <div class="input-group-btn">
-                                                                        <button type="button" class="btn btn-default">Submit</button>
-                                                                    </div>
-                                                                </div>
-                                                                <button type="button" class="btn btn-default">Remove</button>
-                                                                <!--The URL is stored here.--> 
-                                                                <input type="hidden" name="image-url">
-                                                            </div>
+                                                            <button type="button" id="imageupload-reset2" class="btn btn-primary">Reset</button>
                                                         </div>
-
-                                                        <!--bootstrap-imageupload method buttons.--> 
-                                                        <button type="button" id="imageupload-disable2" class="btn btn-danger">Disable</button>
-                                                        <button type="button" id="imageupload-enable2" class="btn btn-success">Enable</button>
-                                                        <button type="button" id="imageupload-reset2" class="btn btn-primary">Reset</button>
-
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4">
@@ -220,18 +162,10 @@
                                                         <div class="imageupload panel panel-default" id="iu3">
                                                             <div class="panel-heading clearfix">
                                                                 <h3 class="panel-title pull-left">Image 3</h3>
-                                                                <div class="btn-group pull-right">
-                                                                    <button type="button" class="btn btn-default active">File</button>
-                                                                    <!--<button type="button" class="btn btn-default">URL</button>-->
-                                                                </div>
-                                                                <div class="btn-group pull-right">
-                                                                    <!--<button type="button" class="btn btn-default active">File</button>-->
-                                                                    <button type="button" class="btn btn-default">URL</button>
-                                                                </div>
                                                             </div>
                                                             <div class="file-tab panel-body mypanel-body">
                                                                 <div class="row">
-                                                                    <label class="btn btn-default btn-file">
+                                                                    <label class="btn btn-default btn-file browse_brn">
                                                                         <span>Browse</span>
                                                                         <!--The file is stored here.--> 
                                                                         <input type="file" name="image-file">
@@ -239,24 +173,8 @@
                                                                     <button type="button" class="btn btn-default">Remove</button>
                                                                 </div>
                                                             </div>
-                                                            <div class="url-tab panel-body mypanel-body">
-                                                                <div class="input-group">
-                                                                    <input type="text" class="form-control hasclear" placeholder="Image URL">
-                                                                    <div class="input-group-btn">
-                                                                        <button type="button" class="btn btn-default">Submit</button>
-                                                                    </div>
-                                                                </div>
-                                                                <button type="button" class="btn btn-default">Remove</button>
-                                                                <!--The URL is stored here.--> 
-                                                                <input type="hidden" name="image-url">
-                                                            </div>
+                                                            <button type="button" id="imageupload-reset3" class="btn btn-primary">Reset</button>
                                                         </div>
-
-                                                        <!--bootstrap-imageupload method buttons.--> 
-                                                        <button type="button" id="imageupload-disable3" class="btn btn-danger">Disable</button>
-                                                        <button type="button" id="imageupload-enable3" class="btn btn-success">Enable</button>
-                                                        <button type="button" id="imageupload-reset3" class="btn btn-primary">Reset</button>
-
                                                     </div>
                                                 </div>
                                             </div>
