@@ -19,7 +19,7 @@
     </a>
 
     <ul class="navbar-nav ml-auto">
-        <li class="nav-item d-md-down-none">
+<!--        <li class="nav-item d-md-down-none">
             <a href="#">
                 <i class="fa fa-bell"></i>
                 <span class="badge badge-pill badge-danger">5</span>
@@ -31,12 +31,30 @@
                 <i class="fa fa-envelope-open"></i>
                 <span class="badge badge-pill badge-danger">5</span>
             </a>
+        </li>-->
+        
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-globe"></i>
+            </a>
+
+            <div class="dropdown-menu dropdown-menu-right">
+                <div class="dropdown-header">Language</div>
+
+                <a href="#" class="dropdown-item">
+                    <img src="com.fundamental/images/icon/United-Kingdom-flag-icon.png" alt="" class="lang_flag"/>English
+                </a>
+
+                <a href="#" class="dropdown-item">
+                    <img src="com.fundamental/images/icon/Japan-Flag-icon.png" alt="" class="lang_flag"/>Japanese
+                </a>
+            </div>
         </li>
 
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <img src="com.fundamental/images/Profile/avatar-1.png" class="avatar avatar-sm" alt="logo">
-                <span class="small ml-1 d-md-down-none">John Smith</span>
+                <span class="small ml-1 d-md-down-none">Administrator</span>
             </a>
 
             <div class="dropdown-menu dropdown-menu-right">

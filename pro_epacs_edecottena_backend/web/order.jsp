@@ -1,6 +1,6 @@
 <%-- 
-    Document   : all_customers
-    Created on : Feb 16, 2018, 4:12:57 PM
+    Document   : order
+    Created on : Feb 21, 2018, 6:03:23 AM
     Author     : Buddhi
 --%>
 
@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Admin - Customers</title>
+        <title>Admin - Orders</title>
 
         <link href="com.fundamental/css/admin_styles.css" rel="stylesheet" type="text/css"/>
         <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
@@ -40,7 +40,7 @@
                             <div class="col-md-12">
                                 <div class="card">
                                     <div class="card-header bg-light">
-                                        Customers
+                                        Orders
                                     </div>
 
                                     <div class="card-body">
@@ -49,18 +49,17 @@
 
                                                 <div class="row tab-search">
                                                     <div class="col-md-6">
-                                                        <a href="new_customer.jsp" class="btn btn-success" id="add-user">
-                                                            <i class="glyphicon glyphicon-plus"></i>
-                                                            Add Customer       
-                                                        </a>
+                                                        <!--                                                        <a href="http#" class="btn btn-success" id="add-user">
+                                                                                                                    <i class="glyphicon glyphicon-plus"></i>
+                                                                                                                    Add Customer       
+                                                                                                                </a>-->
                                                     </div>
                                                     <div class="col-md-2">
                                                         <div class="">
                                                             <select id="status" class="form-control" name="status">
                                                                 <option value="" selected="selected">All</option>
-                                                                <option value="Active">Active</option>
-                                                                <option value="Banned">Banned</option>
-                                                                <option value="Unconfirmed">Unconfirmed</option>
+                                                                <option value="Processing">Processing</option>
+                                                                <option value="Complete">Complete</option>
                                                             </select>
                                                         </div>
                                                     </div>
@@ -78,80 +77,62 @@
                                                 <div class="table-responsive top-border-table" id="users-table-wrapper">
                                                     <table class="table">
                                                         <thead>
-                                                            <tr><th>Username</th>
-                                                                <th>Full Name</th>
+                                                            <tr><th class="text-center">Order ID</th>
+                                                                <th>Customer Name</th>
                                                                 <th>Email</th>
-                                                                <th>Registration Date</th>
+                                                                <th class="text-center">Registration Date</th>
                                                                 <th class="text-center">Status</th>
                                                                 <th class="text-center">Action</th>
                                                             </tr></thead>
                                                         <tbody>
                                                             <tr>
-                                                                <td>irwanc65</td>
-                                                                <td> </td>
+                                                                <td class="text-center">100 001</td>
+                                                                <td>irwanc</td>
                                                                 <td>irwanc65@gmail.com</td>
-                                                                <td>2018-02-16</td>
+                                                                <td class="text-center">2018-02-16</td>
                                                                 <td class="text-center">
-                                                                    <span class="label-rounded btn-success">Active</span>
+                                                                    <span class="label-rounded btn-success">Complete</span>
                                                                 </td>
                                                                 <td class="text-center">
-                                                                    <a href="#" class="btn btn-info btn-circle" title="" data-toggle="tooltip" data-placement="top" data-original-title="User Sessions">
-                                                                        <i class="fas fa-list-ul "></i>
-                                                                    </a>
                                                                     <a href="#" class="btn btn-success btn-circle" title="" data-toggle="tooltip" data-placement="top" data-original-title="View User">
                                                                         <i class="fas fa-eye"></i>
                                                                     </a>
                                                                     <a href="#" class="btn btn-primary btn-circle edit" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit User">
                                                                         <i class="fas fa-edit"></i>
                                                                     </a>
-                                                                    <a href="#" class="btn btn-danger btn-circle" title="" data-toggle="tooltip" data-placement="top" data-method="DELETE" data-confirm-title="Please Confirm" data-confirm-text="Are you sure that you want to delete this user?" data-confirm-delete="Yes, delete him!" data-original-title="Delete User">
-                                                                        <i class="fas fa-trash-alt "></i>
-                                                                    </a>
                                                                 </td>
                                                             </tr>
                                                             <tr>
+                                                                <td class="text-center">100 002</td>
                                                                 <td>miguelgx</td>
-                                                                <td> </td>
                                                                 <td>miguelgx@gmail.com</td>
-                                                                <td>2018-02-15</td>
+                                                                <td class="text-center">2018-02-15</td>
                                                                 <td class="text-center">
-                                                                    <span class="label-rounded btn-danger">Banned</span>
+                                                                    <span class="label-rounded btn-info">Processing</span>
                                                                 </td>
                                                                 <td class="text-center">
-                                                                    <a href="#" class="btn btn-info btn-circle" title="" data-toggle="tooltip" data-placement="top" data-original-title="User Sessions">
-                                                                        <i class="fas fa-list-ul "></i>
-                                                                    </a>
                                                                     <a href="#" class="btn btn-success btn-circle" title="" data-toggle="tooltip" data-placement="top" data-original-title="View User">
                                                                         <i class="fas fa-eye"></i>
                                                                     </a>
                                                                     <a href="#" class="btn btn-primary btn-circle edit" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit User">
                                                                         <i class="fas fa-edit"></i>
-                                                                    </a>
-                                                                    <a href="#" class="btn btn-danger btn-circle" title="" data-toggle="tooltip" data-placement="top" data-method="DELETE" data-confirm-title="Please Confirm" data-confirm-text="Are you sure that you want to delete this user?" data-confirm-delete="Yes, delete him!" data-original-title="Delete User">
-                                                                        <i class="fas fa-trash-alt "></i>
                                                                     </a>
                                                                 </td>
                                                             </tr>
                                                             <tr>
+                                                                <td class="text-center">100 003</td>
                                                                 <td>suckit</td>
-                                                                <td> </td>
                                                                 <td>suckit@suck.it</td>
-                                                                <td>2018-02-15</td>
+                                                                <td class="text-center">2018-02-15</td>
                                                                 <td class="text-center">
-                                                                    <span class="label-rounded btn-warning">Unconfirmed</span>
+                                                                    <span class="label-rounded btn-info">Processing</span>
                                                                 </td>
                                                                 <td class="text-center">
-                                                                    <a href="#" class="btn btn-info btn-circle" title="" data-toggle="tooltip" data-placement="top" data-original-title="User Sessions">
-                                                                        <i class="fas fa-list-ul "></i>
-                                                                    </a>
                                                                     <a href="#" class="btn btn-success btn-circle" title="" data-toggle="tooltip" data-placement="top" data-original-title="View User">
                                                                         <i class="fas fa-eye"></i>
                                                                     </a>
                                                                     <a href="#" class="btn btn-primary btn-circle edit" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit User">
                                                                         <i class="fas fa-edit"></i>
-                                                                    </a>
-                                                                    <a href="#" class="btn btn-danger btn-circle" title="" data-toggle="tooltip" data-placement="top" data-method="DELETE" data-confirm-title="Please Confirm" data-confirm-text="Are you sure that you want to delete this user?" data-confirm-delete="Yes, delete him!" data-original-title="Delete User">
-                                                                        <i class="fas fa-trash-alt "></i>
                                                                     </a>
                                                                 </td>
                                                             </tr>
@@ -180,8 +161,8 @@
             </div>
         </div>
 
-        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!--        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
 
         <script src="com.fundamental/vendor/jquery/jquery.min.js"></script>
         <script src="com.fundamental/vendor/popper.js/popper.min.js"></script>
@@ -189,5 +170,4 @@
         <script src="com.fundamental/vendor/chart.js/chart.min.js"></script>
         <script src="com.fundamental/js/carbon.js"></script>
         <script src="com.fundamental/js/demo.js"></script>
-    </body>
-</html>
+</html

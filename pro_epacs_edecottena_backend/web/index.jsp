@@ -1,143 +1,123 @@
 <%-- 
-    Document   : index
-    Created on : Feb 15, 2018, 8:34:34 PM
+    Document   : admin_login
+    Created on : Feb 20, 2018, 12:07:07 PM
     Author     : Buddhi
 --%>
 
-<!doctype html>
-<html lang="en">
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Admin - Dashboard</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>ADMIN | Login</title>
 
-        <!--        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>-->
+        <script type="application/x-javascript">
+            addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+            }, false);
 
-        <link rel="stylesheet" href="./com.fundamental/vendor/simple-line-icons/css/simple-line-icons.css">
-        <link rel="stylesheet" href="./com.fundamental/vendor/font-awesome/css/fontawesome-all.min.css">
-        <link href="com.fundamental/css/admin_styles.css" rel="stylesheet" type="text/css"/>
+            function hideURLbar() {
+            window.scrollTo(0, 1);
+            }
+        </script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+
+        <!-- css files -->
+        <link rel="stylesheet" href="com.fundamental/css/admin_login_style.css" type="text/css" media="all">
+        <!-- Style-CSS -->
+
     </head>
-    <body class="sidebar-fixed header-fixed">
-        <div class="page-wrapper">
 
-            <%@include file="com.component/common/header/admin_header.jsp" %>
+    <body>
+        <!--header-->
 
-            <div class="main-container">
 
-                <%@include file="com.component/common/sidebar/admin_sidebar.jsp" %>
 
-                <div class="content">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="card p-4">
-                                    <div class="card-body d-flex justify-content-between align-items-center">
-                                        <div>
-                                            <span class="h4 d-block font-weight-normal mb-2">54</span>
-                                            <span class="font-weight-light">Total Users</span>
-                                        </div>
+        <div class="container-fluid">
+            <div class="main-content-agile">
+                <div class="sub-main-w3">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                            <img src="com.fundamental/images/logo/Epacs_Logo_JP.png" class="logo_epacs">
+                            <div class="other_logos">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                        <a href="#" title="Decottena">
+                                            <img src="com.fundamental/images/logo/Decottena_eng_400x400.png">
+                                        </a>
 
-                                        <div class="h2 text-muted">
-                                            <i class="icon icon-people"></i>
-                                        </div>
                                     </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-3">
-                                <div class="card p-4">
-                                    <div class="card-body d-flex justify-content-between align-items-center">
-                                        <div>
-                                            <span class="h4 d-block font-weight-normal mb-2">$32,400</span>
-                                            <span class="font-weight-light">Income</span>
-                                        </div>
-
-                                        <div class="h2 text-muted">
-                                            <i class="icon icon-wallet"></i>
-                                        </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                        <a href="#" title="Kazarina">
+                                            <img src="com.fundamental/images/logo/kazarina_eng_logo_400x400.png">
+                                        </a>
                                     </div>
-                                </div>
-                            </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                        <a href="#" title="Name Badges International">
+                                            <img src="com.fundamental/images/logo/nbi_eng_logo_400x400.png">
 
-                            <div class="col-md-3">
-                                <div class="card p-4">
-                                    <div class="card-body d-flex justify-content-between align-items-center">
-                                        <div>
-                                            <span class="h4 d-block font-weight-normal mb-2">900</span>
-                                            <span class="font-weight-light">Downloads</span>
-                                        </div>
-
-                                        <div class="h2 text-muted">
-                                            <i class="icon icon-cloud-download"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-3">
-                                <div class="card p-4">
-                                    <div class="card-body d-flex justify-content-between align-items-center">
-                                        <div>
-                                            <span class="h4 d-block font-weight-normal mb-2">32s</span>
-                                            <span class="font-weight-light">Time</span>
-                                        </div>
-
-                                        <div class="h2 text-muted">
-                                            <i class="icon icon-clock"></i>
-                                        </div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="row ">
-                            <div class="col-md-12">
-                                <div class="card">
-                                    <div class="card-header">
-                                        Total Users
-                                    </div>
-
-                                    <div class="card-body p-0">
-                                        <div class="p-4">
-                                            <canvas id="line-chart" width="100%" height="20"></canvas>
-                                        </div>
-
-                                        <div class="justify-content-around mt-4 p-4 bg-light d-flex border-top d-md-down-none">
-                                            <div class="text-center">
-                                                <div class="text-muted small">Total Traffic</div>
-                                                <div>12,457 Users (40%)</div>
-                                            </div>
-
-                                            <div class="text-center">
-                                                <div class="text-muted small">Banned Users</div>
-                                                <div>95,333 Users (5%)</div>
-                                            </div>
-
-                                            <div class="text-center">
-                                                <div class="text-muted small">Page Views</div>
-                                                <div>957,565 Pages (50%)</div>
-                                            </div>
-
-                                            <div class="text-center">
-                                                <div class="text-muted small">Total Downloads</div>
-                                                <div>957,565 Files (100 TB)</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                            <div class="or-spacer-vertical right">
+                                <div class="mask"></div>
                             </div>
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                            <h3> 
+                                <span>Management system</span> 
+                            </h3>
+
+
+
+                            <!--<h2 class="login_title">Management system</h2>-->
+                            <form action="order.jsp" method="post">
+                                <div class="pom-agile">
+                                    <span class="fas fa-user" aria-hidden="true"></span>
+                                    <input placeholder="E-mail" name="Name" class="user" type="email">
+                                </div>
+                                <div class="pom-agile">
+                                    <span class="fa fa-key" aria-hidden="true"></span>
+                                    <input placeholder="Password" name="Password" class="pass" type="password">
+                                </div>
+                                <div class="sub-w3l">
+                                    <div class="sub-agile">
+                                        <input id="brand1" value="" type="checkbox">
+                                        <label for="brand1">
+                                            <span></span>Remember me</label>
+                                    </div>
+                                    <a href="#">Forgot Password?</a>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="right-w3l">
+                                    <input value="Login" type="submit" class="login_btn">
+                                </div>
+                            </form>
                         </div>
                     </div>
+
+
+
                 </div>
             </div>
         </div>
-        <script src="./com.fundamental/vendor/jquery/jquery.min.js"></script>
-        <script src="./com.fundamental/vendor/popper.js/popper.min.js"></script>
-        <script src="./com.fundamental/vendor/bootstrap/js/bootstrap.min.js"></script>
-        <script src="./com.fundamental/vendor/chart.js/chart.min.js"></script>
-        <script src="./com.fundamental/js/carbon.js"></script>
-        <script src="./com.fundamental/js/demo.js"></script>
+
+        <!--//main-->
+        <!---728x90--->
+        <!--footer-->
+        <div class="footer">
+            <p>&copy; 2018 EPACS Co., Ltd. All rights reserved | Develop by <a href="https://www.fsczone.com">FSC ZONE</a></p>
+        </div>
+        <!--//footer-->
+        <!---728x90--->
+
+
     </body>
 </html>

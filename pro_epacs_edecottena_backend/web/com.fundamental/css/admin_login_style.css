@@ -203,11 +203,16 @@ span.fa {
 
 /*--responsive--*/
 @media(max-width: 1440px){
+    .other_logos{
+        margin-top: 20px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
     .footer {
         margin-bottom: 40px;
     }
     .sub-main-w3 {
-        margin: 140px auto 80px;
+        margin: 100px auto 80px;
         /*margin: 100px auto;*/
     }
 }
@@ -217,6 +222,11 @@ span.fa {
     }
 }
 @media(max-width: 1280px){
+    .other_logos{
+        margin-top: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
     .header-w3l h1 {
         font-size: 3.4em;
         letter-spacing: 9px;
@@ -258,6 +268,17 @@ span.fa {
     }
 }
 @media(max-width: 768px){
+    .mask{
+        display: none;
+        height: 50px;
+    }
+    
+    .other_logos{
+        margin-top: 20px;
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-bottom: 50px;
+    }
     .header-w3l {
         padding-top: 3em;
     }
@@ -277,6 +298,11 @@ span.fa {
     }
 }
 @media(max-width: 667px){
+    .other_logos{
+        margin-top: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
     .header-w3l h1 {
         letter-spacing: 6px;
     }
@@ -403,11 +429,11 @@ span.fa {
     /*margin-top: 150px;*/
 }
 
-.other_logos{
+/*.other_logos{
     margin-top: 20px;
     padding-left: 100px;
     padding-right: 100px;
-}
+}*/
 
 .main-content-agile{
     width: 100%;
@@ -439,7 +465,7 @@ span.fa {
     display: block;
     /*margin-left: 20px;*/
     width: 2px;
-    height: 282px;
+    height: 325px;
     border-radius: 12px / 125px;
     box-shadow: 0 0 8px black;
 
@@ -451,24 +477,24 @@ span.fa {
 }
 
 body {
-  background-color: #ece5da;
-  text-align: center;
+    background-color: #ece5da;
+    text-align: center;
 }
 
 h3 {
-  /* margin: 20px; */
-  /*font-family: "Paytone One";*/
-  color: #202020;
-  text-transform: uppercase;
-  letter-spacing: -2px;
+    /* margin: 20px; */
+    /*font-family: "Paytone One";*/
+    color: #202020;
+    text-transform: uppercase;
+    letter-spacing: -2px;
 }
 
 h3 span {
-  display: block;
-  margin: 11px 0 17px 0;
-  font-size: 40px;
-  line-height: 80px;
-  color: #fb6906;
-  text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
-  letter-spacing: -4px;
+    display: block;
+    margin: 11px 0 17px 0;
+    font-size: 40px;
+    line-height: 80px;
+    color: #fb6906;
+    text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
+    letter-spacing: -4px;
 }

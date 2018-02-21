@@ -10,14 +10,13 @@
             <li class="nav-title">Navigation</li>
 
             <li class="nav-item">
-                <a href="dashboard.jsp" class="nav-link active">
-                    <i class="icon icon-speedometer"></i> Dashboard
+                <a href="order.jsp" class="nav-link active">
+                    <i class="icon icon-puzzle"></i> Order Management
                 </a>
             </li>
-
             <li class="nav-item nav-dropdown">
                 <a href="#" class="nav-link nav-dropdown-toggle">
-                    <i class="fa fa-archive"></i> Product <i class="fa fa-caret-left"></i>
+                    <i class="fa fa-archive"></i> Product Management <i class="fa fa-caret-left"></i>
                 </a>
 
                 <ul class="nav-dropdown-items">
@@ -32,7 +31,7 @@
                             <i class="icon icon-target"></i> New Product
                         </a>
                     </li>
-                    
+
                     <li class="nav-item">
                         <a href="all_product_categories.jsp" class="nav-link">
                             <i class="fas fa-users"></i> Categories
@@ -40,30 +39,9 @@
                     </li>
                 </ul>
             </li>
-
             <li class="nav-item nav-dropdown">
                 <a href="#" class="nav-link nav-dropdown-toggle">
-                    <i class="fas fa-user"></i> User <i class="fa fa-caret-left"></i>
-                </a>
-
-                <ul class="nav-dropdown-items">
-                    <li class="nav-item">
-                        <a href="all_users.jsp" class="nav-link">
-                            <i class="fas fa-users"></i> Users
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="new_user.jsp" class="nav-link">
-                            <i class="fas fa-user-plus"></i> New User
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            
-            <li class="nav-item nav-dropdown">
-                <a href="#" class="nav-link nav-dropdown-toggle">
-                    <i class="fas fa-user-secret"></i> Customer <i class="fa fa-caret-left"></i>
+                    <i class="fas fa-user-secret"></i> Customer Management <i class="fa fa-caret-left"></i>
                 </a>
 
                 <ul class="nav-dropdown-items">
@@ -80,10 +58,9 @@
                     </li>
                 </ul>
             </li>
-            
             <li class="nav-item nav-dropdown">
                 <a href="#" class="nav-link nav-dropdown-toggle">
-                    <i class="fas fa-user-secret"></i> Company <i class="fa fa-caret-left"></i>
+                    <i class="fas fa-user-secret"></i> Company Management <i class="fa fa-caret-left"></i>
                 </a>
 
                 <ul class="nav-dropdown-items">
@@ -105,13 +82,35 @@
                     </li>
                 </ul>
             </li>
+
+            <li class="nav-item" id="nav_item_summary">
+                <a href="summary.jsp" class="nav-link">
+                    <i class="icon icon-speedometer"></i> Summary
+                </a>
+            </li>
+
+
+
+            
+            
             
             <li class="nav-item nav-dropdown">
                 <a href="#" class="nav-link nav-dropdown-toggle">
-                    <i class="fas fa-user-secret"></i> Roles & Permissions <i class="fa fa-caret-left"></i>
+                    <i class="fas fa-user"></i> User Management <i class="fa fa-caret-left"></i>
                 </a>
 
                 <ul class="nav-dropdown-items">
+                    <li class="nav-item">
+                        <a href="all_users.jsp" class="nav-link">
+                            <i class="fas fa-users"></i> Users
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="new_user.jsp" class="nav-link">
+                            <i class="fas fa-user-plus"></i> New User
+                        </a>
+                    </li>
                     <li class="nav-item">
                         <a href="all_roles.jsp" class="nav-link">
                             <i class="fas fa-users"></i> Roles
@@ -125,14 +124,23 @@
                     </li>
                 </ul>
             </li>
-            
-            <li class="nav-item">
-                <a href="order.jsp" class="nav-link">
-                    <i class="icon icon-puzzle"></i> Oroder
+
+
+
+
+
+<!--            <li class="nav-item nav-dropdown">
+                <a href="#" class="nav-link nav-dropdown-toggle">
+                    <i class="fas fa-user-secret"></i> Roles & Permissions <i class="fa fa-caret-left"></i>
                 </a>
-            </li>
-            
-            
+
+                <ul class="nav-dropdown-items">
+                </ul>
+            </li>-->
+
+
+
+
         </ul>
     </nav>
 </div>

@@ -182,9 +182,9 @@
         <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-        <!--<script src="./vendor/jquery/jquery.min.js"></script>-->
+        <script src="com.fundamental/vendor/jquery/jquery.min.js"></script>
         <script src="com.fundamental/vendor/popper.js/popper.min.js"></script>
-        <!--<script src="./vendor/bootstrap/js/bootstrap.min.js"></script>-->
+        <script src="com.fundamental/vendor/bootstrap/js/bootstrap.min.js"></script>
         <script src="com.fundamental/vendor/chart.js/chart.min.js"></script>
         <script src="com.fundamental/js/carbon.js"></script>
         <script src="com.fundamental/js/demo.js"></script>

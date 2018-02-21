@@ -152,9 +152,9 @@
         <script src="com.fundamental/js/bootstrap-imageupload.js" type="text/javascript"></script>
         <script src="com.fundamental/js/admin_new_product/image_upload.js" type="text/javascript"></script>
 
-        <!--<script src="./vendor/jquery/jquery.min.js"></script>-->
+        <script src="com.fundamental/vendor/jquery/jquery.min.js"></script>
         <script src="com.fundamental/vendor/popper.js/popper.min.js"></script>
-        <!--<script src="./vendor/bootstrap/js/bootstrap.min.js"></script>-->
+        <script src="com.fundamental/vendor/bootstrap/js/bootstrap.min.js"></script>
         <script src="com.fundamental/vendor/chart.js/chart.min.js"></script>
         <script src="com.fundamental/js/carbon.js"></script>
         <script src="com.fundamental/js/demo.js"></script>
