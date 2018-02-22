@@ -197,3 +197,16 @@ img {
     width: 25px;
     margin-right: 20px;
 }
+
+.status_box{    
+    padding-bottom: 15px;
+}
+
+.action_col{
+    width: 200px;
+}
+
+
+.action_col .row{
+    margin: 0px;
+}

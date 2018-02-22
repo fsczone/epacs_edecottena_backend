@@ -59,22 +59,12 @@
                                                     <input class="form-control" placeholder="">
                                                 </div>
                                                 <div class="form-group">
-                                                    <label for="single-select">Category</label>
-                                                    <select id="single-select" class="form-control">
-                                                        <option>Sweets</option>
-                                                        <option>Animal</option>
-                                                        <option>Funny</option>
-                                                        <option>Q(c)utie</option>
-                                                        <option>Kireime</option>
-                                                    </select>
-                                                </div>
-                                                <div class="form-group">
                                                     <label for="textarea">Description</label>
                                                     <textarea class="form-control" rows="6" placeholder=""></textarea>
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="single-select">Status</label>
-                                                    <div class="my-form-group-border">
+                                                    <div class="my-form-group-border status_box">
                                                         <div class="toggle-switch" data-ts-color="success">
                                                             <label for="ts4" class="ts-label">Active</label>
                                                             <input id="ts4" type="checkbox" hidden="hidden">
@@ -87,7 +77,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="col-md-8">
                                 <div class="card">
                                     <div class="card-header bg-light">
@@ -98,12 +88,12 @@
                                         <div class="row">
                                             <div class="container-fluid">
 
-                                                <div class="row tab-search">
+<!--                                                <div class="row tab-search">
                                                     <div class="col-md-4">
-                                                        <a href="new_customer.jsp" class="btn btn-success" id="add-user">
-                                                            <i class="glyphicon glyphicon-plus"></i>
-                                                            Add Category   
-                                                        </a>
+                                                                                                                <a href="#" class="btn btn-success" id="add-user">
+                                                                                                                    <i class="glyphicon glyphicon-plus"></i>
+                                                                                                                    Add Category   
+                                                                                                                </a>
                                                     </div>
                                                     <div class="col-md-3">
                                                         <div class="">
@@ -115,7 +105,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-md-5">
-                                                        <!--<label for="input-group-2">Input Group with Button</label>-->
+                                                        <label for="input-group-2">Input Group with Button</label>
                                                         <div class="input-group">
                                                             <input id="input-group-2" name="input1-group2" class="form-control" placeholder="Search here ..." type="text">
                                                             <span class="input-group-btn">
@@ -123,7 +113,7 @@
                                                             </span>
                                                         </div>
                                                     </div>
-                                                </div>
+                                                </div>-->
 
                                                 <div class="table-responsive top-border-table" id="users-table-wrapper">
                                                     <table class="table">
@@ -141,19 +131,21 @@
                                                                 <td class="text-center">
                                                                     <span class="label-rounded btn-success">Active</span>
                                                                 </td>
-                                                                <td class="text-center">
-                                                                    <a href="#" class="btn btn-info btn-circle" title="" data-toggle="tooltip" data-placement="top" data-original-title="User Sessions">
-                                                                        <i class="fas fa-list-ul "></i>
-                                                                    </a>
-                                                                    <a href="#" class="btn btn-success btn-circle" title="" data-toggle="tooltip" data-placement="top" data-original-title="View User">
-                                                                        <i class="fas fa-eye"></i>
-                                                                    </a>
-                                                                    <a href="#" class="btn btn-primary btn-circle edit" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit User">
-                                                                        <i class="fas fa-edit"></i>
-                                                                    </a>
-                                                                    <a href="#" class="btn btn-danger btn-circle" title="" data-toggle="tooltip" data-placement="top" data-method="DELETE" data-confirm-title="Please Confirm" data-confirm-text="Are you sure that you want to delete this user?" data-confirm-delete="Yes, delete him!" data-original-title="Delete User">
-                                                                        <i class="fas fa-trash-alt "></i>
-                                                                    </a>
+                                                                <td class="text-center action_col">
+                                                                    <div class="row">
+                                                                        <div class="col-md-8">
+                                                                            <select id="status" class="form-control" name="status">
+                                                                                <option value="" selected="selected">All</option>
+                                                                                <option value="Active">Active</option>
+                                                                                <option value="Banned">Deactive</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <div class="col-md-4">
+                                                                            <a href="#" class="btn btn-primary btn-circle edit" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit User">
+                                                                                <i class="fas fa-edit"></i>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -162,19 +154,21 @@
                                                                 <td class="text-center">
                                                                     <span class="label-rounded btn-danger">Deactive</span>
                                                                 </td>
-                                                                <td class="text-center">
-                                                                    <a href="#" class="btn btn-info btn-circle" title="" data-toggle="tooltip" data-placement="top" data-original-title="User Sessions">
-                                                                        <i class="fas fa-list-ul "></i>
-                                                                    </a>
-                                                                    <a href="#" class="btn btn-success btn-circle" title="" data-toggle="tooltip" data-placement="top" data-original-title="View User">
-                                                                        <i class="fas fa-eye"></i>
-                                                                    </a>
-                                                                    <a href="#" class="btn btn-primary btn-circle edit" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit User">
-                                                                        <i class="fas fa-edit"></i>
-                                                                    </a>
-                                                                    <a href="#" class="btn btn-danger btn-circle" title="" data-toggle="tooltip" data-placement="top" data-method="DELETE" data-confirm-title="Please Confirm" data-confirm-text="Are you sure that you want to delete this user?" data-confirm-delete="Yes, delete him!" data-original-title="Delete User">
-                                                                        <i class="fas fa-trash-alt "></i>
-                                                                    </a>
+                                                                <td class="text-center action_col">
+                                                                    <div class="row">
+                                                                        <div class="col-md-8">
+                                                                            <select id="status" class="form-control" name="status">
+                                                                                <option value="" selected="selected">All</option>
+                                                                                <option value="Active">Active</option>
+                                                                                <option value="Banned">Deactive</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <div class="col-md-4">
+                                                                            <a href="#" class="btn btn-primary btn-circle edit" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit User">
+                                                                                <i class="fas fa-edit"></i>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -183,19 +177,21 @@
                                                                 <td class="text-center">
                                                                     <span class="label-rounded btn-danger">Deactive</span>
                                                                 </td>
-                                                                <td class="text-center">
-                                                                    <a href="#" class="btn btn-info btn-circle" title="" data-toggle="tooltip" data-placement="top" data-original-title="User Sessions">
-                                                                        <i class="fas fa-list-ul "></i>
-                                                                    </a>
-                                                                    <a href="#" class="btn btn-success btn-circle" title="" data-toggle="tooltip" data-placement="top" data-original-title="View User">
-                                                                        <i class="fas fa-eye"></i>
-                                                                    </a>
-                                                                    <a href="#" class="btn btn-primary btn-circle edit" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit User">
-                                                                        <i class="fas fa-edit"></i>
-                                                                    </a>
-                                                                    <a href="#" class="btn btn-danger btn-circle" title="" data-toggle="tooltip" data-placement="top" data-method="DELETE" data-confirm-title="Please Confirm" data-confirm-text="Are you sure that you want to delete this user?" data-confirm-delete="Yes, delete him!" data-original-title="Delete User">
-                                                                        <i class="fas fa-trash-alt "></i>
-                                                                    </a>
+                                                                <td class="text-center action_col">
+                                                                    <div class="row">
+                                                                        <div class="col-md-8">
+                                                                            <select id="status" class="form-control" name="status">
+                                                                                <option value="" selected="selected">All</option>
+                                                                                <option value="Active">Active</option>
+                                                                                <option value="Banned">Deactive</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <div class="col-md-4">
+                                                                            <a href="#" class="btn btn-primary btn-circle edit" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit User">
+                                                                                <i class="fas fa-edit"></i>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -204,19 +200,21 @@
                                                                 <td class="text-center">
                                                                     <span class="label-rounded btn-success">Active</span>
                                                                 </td>
-                                                                <td class="text-center">
-                                                                    <a href="#" class="btn btn-info btn-circle" title="" data-toggle="tooltip" data-placement="top" data-original-title="User Sessions">
-                                                                        <i class="fas fa-list-ul "></i>
-                                                                    </a>
-                                                                    <a href="#" class="btn btn-success btn-circle" title="" data-toggle="tooltip" data-placement="top" data-original-title="View User">
-                                                                        <i class="fas fa-eye"></i>
-                                                                    </a>
-                                                                    <a href="#" class="btn btn-primary btn-circle edit" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit User">
-                                                                        <i class="fas fa-edit"></i>
-                                                                    </a>
-                                                                    <a href="#" class="btn btn-danger btn-circle" title="" data-toggle="tooltip" data-placement="top" data-method="DELETE" data-confirm-title="Please Confirm" data-confirm-text="Are you sure that you want to delete this user?" data-confirm-delete="Yes, delete him!" data-original-title="Delete User">
-                                                                        <i class="fas fa-trash-alt "></i>
-                                                                    </a>
+                                                                <td class="text-center action_col">
+                                                                    <div class="row">
+                                                                        <div class="col-md-8">
+                                                                            <select id="status" class="form-control" name="status">
+                                                                                <option value="" selected="selected">All</option>
+                                                                                <option value="Active">Active</option>
+                                                                                <option value="Banned">Deactive</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <div class="col-md-4">
+                                                                            <a href="#" class="btn btn-primary btn-circle edit" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit User">
+                                                                                <i class="fas fa-edit"></i>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -225,19 +223,21 @@
                                                                 <td class="text-center">
                                                                     <span class="label-rounded btn-success">Active</span>
                                                                 </td>
-                                                                <td class="text-center">
-                                                                    <a href="#" class="btn btn-info btn-circle" title="" data-toggle="tooltip" data-placement="top" data-original-title="User Sessions">
-                                                                        <i class="fas fa-list-ul "></i>
-                                                                    </a>
-                                                                    <a href="#" class="btn btn-success btn-circle" title="" data-toggle="tooltip" data-placement="top" data-original-title="View User">
-                                                                        <i class="fas fa-eye"></i>
-                                                                    </a>
-                                                                    <a href="#" class="btn btn-primary btn-circle edit" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit User">
-                                                                        <i class="fas fa-edit"></i>
-                                                                    </a>
-                                                                    <a href="#" class="btn btn-danger btn-circle" title="" data-toggle="tooltip" data-placement="top" data-method="DELETE" data-confirm-title="Please Confirm" data-confirm-text="Are you sure that you want to delete this user?" data-confirm-delete="Yes, delete him!" data-original-title="Delete User">
-                                                                        <i class="fas fa-trash-alt "></i>
-                                                                    </a>
+                                                                <td class="text-center action_col">
+                                                                    <div class="row">
+                                                                        <div class="col-md-8">
+                                                                            <select id="status" class="form-control" name="status">
+                                                                                <option value="" selected="selected">All</option>
+                                                                                <option value="Active">Active</option>
+                                                                                <option value="Banned">Deactive</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <div class="col-md-4">
+                                                                            <a href="#" class="btn btn-primary btn-circle edit" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit User">
+                                                                                <i class="fas fa-edit"></i>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
                                                                 </td>
                                                             </tr>
 

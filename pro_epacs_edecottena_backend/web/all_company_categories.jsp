@@ -59,21 +59,13 @@
                                                     <input class="form-control" placeholder="">
                                                 </div>
                                                 <div class="form-group">
-                                                    <label for="single-select">Category</label>
-                                                    <select id="single-select" class="form-control">
-                                                        <option>Consulting</option>
-                                                        <option>Educational</option>
-                                                        <option>Clothing</option>
-                                                    </select>
-                                                </div>
-                                                <div class="form-group">
                                                     <label for="textarea">Description</label>
                                                     <textarea class="form-control" rows="6" placeholder=""></textarea>
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="single-select">Status</label>
                                                     <div class="my-form-group-border">
-                                                        <div class="toggle-switch" data-ts-color="success">
+                                                        <div class="toggle-switch status_box" data-ts-color="success">
                                                             <label for="ts4" class="ts-label">Active</label>
                                                             <input id="ts4" type="checkbox" hidden="hidden">
                                                             <label for="ts4" class="ts-helper"></label>
@@ -98,10 +90,10 @@
 
                                                 <div class="row tab-search">
                                                     <div class="col-md-4">
-                                                        <a href="new_customer.jsp" class="btn btn-success" id="add-user">
+<!--                                                        <a href="#" class="btn btn-success" id="add-user">
                                                             <i class="glyphicon glyphicon-plus"></i>
                                                             Add Category   
-                                                        </a>
+                                                        </a>-->
                                                     </div>
                                                     <div class="col-md-3">
                                                         <div class="">

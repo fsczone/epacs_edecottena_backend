@@ -68,22 +68,16 @@
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="normal-input" class="form-control-label">Name</label>
-                                                            <input class="form-control" placeholder="English">
+                                                            <input class="form-control" placeholder="Japanese">
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="normal-input" class="form-control-label">Name</label>
-                                                            <input class="form-control" placeholder="Japanese">
+                                                            <input class="form-control" placeholder="English">
                                                         </div>
                                                     </div>
 
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <label for="textarea">Description</label>
-                                                            <textarea class="form-control" rows="6" placeholder="English"></textarea>
-                                                        </div>
-                                                    </div>
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="textarea">Description</label>
@@ -92,8 +86,8 @@
                                                     </div>
                                                     <div class="col-md-6">
                                                         <div class="form-group">
-                                                            <label for="normal-input" class="form-control-label">Info</label>
-                                                            <input class="form-control" placeholder="English">
+                                                            <label for="textarea">Description</label>
+                                                            <textarea class="form-control" rows="6" placeholder="English"></textarea>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6">
@@ -102,10 +96,16 @@
                                                             <input class="form-control" placeholder="Japanese">
                                                         </div>
                                                     </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="normal-input" class="form-control-label">Info</label>
+                                                            <input class="form-control" placeholder="English">
+                                                        </div>
+                                                    </div>
                                                     <div class="col-md-12">
                                                         <div class="form-group">
                                                             <label for="normal-input" class="form-control-label">Price</label>
-                                                            <input class="form-control" placeholder="US Dollar">
+                                                            <input class="form-control" placeholder="Japanese Yen">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -144,7 +144,7 @@
                                                             </div>
                                                             <div class="file-tab panel-body mypanel-body">
                                                                 <div class="row">
-                                                                    <label class="btn btn-default btn-file browse_brn">
+                                                                    <label class="btn btn-warning btn-file browse_brn">
                                                                         <span>Browse</span>
                                                                         <!--The file is stored here.--> 
                                                                         <input type="file" name="image-file">
@@ -165,7 +165,7 @@
                                                             </div>
                                                             <div class="file-tab panel-body mypanel-body">
                                                                 <div class="row">
-                                                                    <label class="btn btn-default btn-file browse_brn">
+                                                                    <label class="btn btn-warning btn-file browse_brn">
                                                                         <span>Browse</span>
                                                                         <!--The file is stored here.--> 
                                                                         <input type="file" name="image-file">
