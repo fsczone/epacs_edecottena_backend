@@ -33,19 +33,20 @@
             <div class="main-container">
 
                 <%@include file="com.component/common/sidebar/admin_sidebar.jsp" %>
-
+                
                 <div class="content">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="card">
+                                    <form action="/co_add_catagory" method="POST">
                                     <div class="card-header bg-light">
                                         <div class="row">
-                                            <div class="col-8">
+                                            <div id="tsts" class="col-8">
                                                 Add Category
                                             </div>
                                             <div class="col-4">
-                                                <button type="button" class="btn btn-info">Save</button>
+                                                <button id="bt_save_product" onclick="alert('cc');" type="button" class="btn btn-info">Save</button>
                                             </div>
                                         </div>
                                     </div>
@@ -56,18 +57,18 @@
                                             <div class="col-12">
                                                 <div class="form-group">
                                                     <label for="normal-input" class="form-control-label">Name</label>
-                                                    <input class="form-control" placeholder="">
+                                                    <input id="in_product_name" class="form-control" placeholder="">
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="textarea">Description</label>
-                                                    <textarea class="form-control" rows="6" placeholder=""></textarea>
+                                                    <textarea id="in_product_discription" class="form-control" rows="6" placeholder=""></textarea>
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="single-select">Status</label>
                                                     <div class="my-form-group-border status_box">
                                                         <div class="toggle-switch" data-ts-color="success">
                                                             <label for="ts4" class="ts-label">Active</label>
-                                                            <input id="ts4" type="checkbox" hidden="hidden">
+                                                            <input id="in_product_status" type="checkbox" hidden="hidden">
                                                             <label for="ts4" class="ts-helper"></label>
                                                         </div>
                                                     </div>
@@ -75,6 +76,7 @@
                                             </div>
                                         </div>
                                     </div>
+                                </form>
                                 </div>
                             </div>
 
@@ -274,5 +276,7 @@
         <script src="com.fundamental/vendor/chart.js/chart.min.js"></script>
         <script src="com.fundamental/js/carbon.js"></script>
         <script src="com.fundamental/js/demo.js"></script>
+        
+        <script src="controller_js/js_ajax_addCategory.js"  ></script>
     </body>
 </html>
