@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 23, 2018 2:08:49 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="db_mapping_files.TbCatagoryInfo" table="tb_catagory_info" catalog="safenets_epacs" optimistic-lock="version">
+        <id name="ciId" type="java.lang.Integer">
+            <column name="ci_id" />
+            <generator class="identity" />
+        </id>
+        <property name="ciTitle" type="string">
+            <column name="ci_title" length="100" />
+        </property>
+        <property name="ciStatus" type="string">
+            <column name="ci_status" length="45" />
+        </property>
+        <set name="tbSubcatagoryInfos" table="tb_subcatagory_info" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="tb_catagory_info_ci_id" not-null="true" />
+            </key>
+            <one-to-many class="db_mapping_files.TbSubcatagoryInfo" />
+        </set>
+    </class>
+</hibernate-mapping>

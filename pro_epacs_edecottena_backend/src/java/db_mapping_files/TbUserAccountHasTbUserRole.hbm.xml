@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 23, 2018 2:08:49 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="db_mapping_files.TbUserAccountHasTbUserRole" table="tb_user_account_has_tb_user_role" catalog="safenets_epacs" optimistic-lock="version">
+        <id name="uaurId" type="java.lang.Integer">
+            <column name="uaur_id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="tbUserAccount" class="db_mapping_files.TbUserAccount" fetch="select">
+            <column name="tb_user_account_ua_id" not-null="true" />
+        </many-to-one>
+        <many-to-one name="tbUserRole" class="db_mapping_files.TbUserRole" fetch="select">
+            <column name="tb_user_role_ur_id" not-null="true" />
+        </many-to-one>
+        <property name="uaurStatus" type="string">
+            <column name="uaur_status" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

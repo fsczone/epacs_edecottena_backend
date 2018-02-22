@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 23, 2018 2:08:49 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="db_mapping_files.TbCartRegister" table="tb_cart_register" catalog="safenets_epacs" optimistic-lock="version">
+        <id name="crId" type="java.lang.Integer">
+            <column name="cr_id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="tbCartInfo" class="db_mapping_files.TbCartInfo" fetch="select">
+            <column name="tb_cart_info_ci_id" not-null="true" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

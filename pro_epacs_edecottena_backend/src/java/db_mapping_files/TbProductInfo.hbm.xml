@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 23, 2018 2:08:49 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="db_mapping_files.TbProductInfo" table="tb_product_info" catalog="safenets_epacs" optimistic-lock="version">
+        <id name="piId" type="java.lang.Integer">
+            <column name="pi_id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="tbSubcatagoryInfo" class="db_mapping_files.TbSubcatagoryInfo" fetch="select">
+            <column name="tb_subcatagory_info_si_id" not-null="true" />
+        </many-to-one>
+        <many-to-one name="tbUserAccount" class="db_mapping_files.TbUserAccount" fetch="select">
+            <column name="tb_user_account_ua_id" not-null="true" />
+        </many-to-one>
+        <property name="piTitle" type="string">
+            <column name="pi_title" length="200" />
+        </property>
+        <property name="piJpTitle" type="string">
+            <column name="pi_jp_title" length="200" />
+        </property>
+        <property name="piGenId" type="string">
+            <column name="pi_gen_id" length="100" />
+        </property>
+        <property name="piDiscription" type="string">
+            <column name="pi_discription" />
+        </property>
+        <property name="piJpDiscription" type="string">
+            <column name="pi_jp_discription" />
+        </property>
+        <property name="piInfo" type="string">
+            <column name="pi_info" length="250" />
+        </property>
+        <property name="piJpInfo" type="string">
+            <column name="pi_jp_info" length="250" />
+        </property>
+        <property name="piPrice" type="java.lang.Double">
+            <column name="pi_price" precision="22" scale="0" />
+        </property>
+        <property name="piStaus" type="string">
+            <column name="pi_staus" length="45" />
+        </property>
+        <set name="tbImagesInfos" table="tb_images_info" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="tb_product_info_pi_id" not-null="true" />
+            </key>
+            <one-to-many class="db_mapping_files.TbImagesInfo" />
+        </set>
+        <set name="tbCartInfos" table="tb_cart_info" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="tb_product_info_pi_id" not-null="true" />
+            </key>
+            <one-to-many class="db_mapping_files.TbCartInfo" />
+        </set>
+    </class>
+</hibernate-mapping>

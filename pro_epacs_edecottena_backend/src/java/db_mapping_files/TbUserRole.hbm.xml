@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 23, 2018 2:08:49 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="db_mapping_files.TbUserRole" table="tb_user_role" catalog="safenets_epacs" optimistic-lock="version">
+        <id name="urId" type="java.lang.Integer">
+            <column name="ur_id" />
+            <generator class="identity" />
+        </id>
+        <property name="urTitile" type="string">
+            <column name="ur_titile" length="100" />
+        </property>
+        <property name="urStatus" type="string">
+            <column name="ur_status" length="45" />
+        </property>
+        <set name="tbUserRoleHasTbPageAuthentications" table="tb_user_role_has_tb_page_authentication" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="tb_user_role_ur_id" not-null="true" />
+            </key>
+            <one-to-many class="db_mapping_files.TbUserRoleHasTbPageAuthentication" />
+        </set>
+        <set name="tbUserAccountHasTbUserRoles" table="tb_user_account_has_tb_user_role" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="tb_user_role_ur_id" not-null="true" />
+            </key>
+            <one-to-many class="db_mapping_files.TbUserAccountHasTbUserRole" />
+        </set>
+        <set name="tbPageAuthenticationHasTbFuntionAuthentications" table="tb_page_authentication_has_tb_funtion_authentication" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="tb_user_role_ur_id" not-null="true" />
+            </key>
+            <one-to-many class="db_mapping_files.TbPageAuthenticationHasTbFuntionAuthentication" />
+        </set>
+    </class>
+</hibernate-mapping>

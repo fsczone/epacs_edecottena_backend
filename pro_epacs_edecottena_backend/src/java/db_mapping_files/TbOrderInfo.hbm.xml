@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 23, 2018 2:08:49 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="db_mapping_files.TbOrderInfo" table="tb_order_info" catalog="safenets_epacs" optimistic-lock="version">
+        <id name="oiId" type="java.lang.Integer">
+            <column name="oi_id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="tbOrderStatus" class="db_mapping_files.TbOrderStatus" fetch="select">
+            <column name="tb_order_status_os_id" not-null="true" />
+        </many-to-one>
+        <property name="oiGenId" type="string">
+            <column name="oi_gen_id" length="45" />
+        </property>
+        <property name="oiDate" type="string">
+            <column name="oi_date" length="45" />
+        </property>
+        <property name="oiDiliveryDate" type="string">
+            <column name="oi_dilivery_date" length="45" />
+        </property>
+        <property name="oiShippingDate" type="string">
+            <column name="oi_shipping_date" length="45" />
+        </property>
+        <property name="oiStatus" type="string">
+            <column name="oi_status" length="45" />
+        </property>
+        <set name="tbInvoiceInfos" table="tb_invoice_info" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="tb_order_info_oi_id" not-null="true" />
+            </key>
+            <one-to-many class="db_mapping_files.TbInvoiceInfo" />
+        </set>
+    </class>
+</hibernate-mapping>

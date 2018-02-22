@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 23, 2018 2:08:49 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="db_mapping_files.TbOrderStatus" table="tb_order_status" catalog="safenets_epacs" optimistic-lock="version">
+        <id name="osId" type="java.lang.Integer">
+            <column name="os_id" />
+            <generator class="identity" />
+        </id>
+        <property name="osTitle" type="string">
+            <column name="os_title" length="100" />
+        </property>
+        <property name="osStatus" type="string">
+            <column name="os_status" length="45" />
+        </property>
+        <set name="tbOrderInfos" table="tb_order_info" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="tb_order_status_os_id" not-null="true" />
+            </key>
+            <one-to-many class="db_mapping_files.TbOrderInfo" />
+        </set>
+    </class>
+</hibernate-mapping>
