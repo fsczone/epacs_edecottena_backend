@@ -34,7 +34,7 @@ public class co_add_catagory extends HttpServlet {
             
             String toJson = gson.toJson(p_name);
             // String json = "[{\"name\":\"mkyong\"}, {\"name\":\"laplap\"}]";
-            String json1 = "[{\"id\":\"in_catagory_name\",\"val\":\"Ddd1\"},{\"id\":\"in_catagory_discription\",\"val\":\"Ssss2\"},{\"id\":\"in_catagory_status\",\"val\":\"Active\"}]";
+           // String json1 = "[{\"id\":\"in_catagory_name\",\"val\":\"Ddd1\"},{\"id\":\"in_catagory_discription\",\"val\":\"Ssss2\"},{\"id\":\"in_catagory_status\",\"val\":\"Active\"}]";
             List<sc_Catagorys> list = gson.fromJson(toJson, new TypeToken<List<sc_Catagorys>>() {
             }.getType());
 
