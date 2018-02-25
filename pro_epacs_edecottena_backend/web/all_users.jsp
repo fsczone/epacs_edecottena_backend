@@ -5,6 +5,13 @@
 --%>
 
 
+<%
+    HttpSession httpSession_all_users = request.getSession();
+    httpSession_all_users.setAttribute("page_title", "all_users");
+%>
+
+
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>

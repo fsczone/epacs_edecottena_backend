@@ -4,6 +4,13 @@
     Author     : Buddhi
 --%>
 
+
+<%
+    HttpSession httpSession_all_companies = request.getSession();
+    httpSession_all_companies.setAttribute("page_title", "all_companies");
+%>
+
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>

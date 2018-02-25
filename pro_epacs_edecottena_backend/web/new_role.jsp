@@ -4,6 +4,13 @@
     Author     : Buddhi
 --%>
 
+
+<%
+    HttpSession httpSession_new_role = request.getSession();
+    httpSession_new_role.setAttribute("page_title", "new_role");
+%>
+
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>

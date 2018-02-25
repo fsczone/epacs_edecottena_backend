@@ -4,6 +4,13 @@
     Author     : Buddhi
 --%>
 
+
+<%
+    HttpSession httpSession_all_products = request.getSession();
+    httpSession_all_products.setAttribute("page_title", "all_products");
+%>
+
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -13,7 +20,6 @@
 
         <!--        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
                 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>-->
-
 
         <link rel="stylesheet" href="com.fundamental/vendor/simple-line-icons/css/simple-line-icons.css">
         <link rel="stylesheet" href="com.fundamental/vendor/font-awesome/css/fontawesome-all.min.css">
@@ -33,7 +39,7 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-3">
-                                <a href="#">
+                                <a href="new_product.jsp">
                                     <div class="mycard">
                                         <img class="mycard_img" src="com.fundamental/images/item/home_category/Sweets/p1.jpg" alt="Avatar" style="width:100%">
                                         <div class="mycard_container">
@@ -44,7 +50,7 @@
                                 </a>
                             </div>
                             <div class="col-md-3">
-                                <a href="#">
+                                <a href="new_product.jsp">
                                     <div class="mycard">
                                         <img class="mycard_img" src="com.fundamental/images/item/home_category/Sweets/p2.jpg" alt="Avatar" style="width:100%">
                                         <div class="mycard_container">
@@ -55,7 +61,7 @@
                                 </a>
                             </div>
                             <div class="col-md-3">
-                                <a href="#">
+                                <a href="new_product.jsp">
                                     <div class="mycard">
                                         <img class="mycard_img" src="com.fundamental/images/item/home_category/Sweets/p3.jpg" alt="Avatar" style="width:100%">
                                         <div class="mycard_container">
@@ -66,7 +72,7 @@
                                 </a>
                             </div>
                             <div class="col-md-3">
-                                <a href="#">
+                                <a href="new_product.jsp">
                                     <div class="mycard">
                                         <img class="mycard_img" src="com.fundamental/images/item/home_category/Sweets/p1.jpg" alt="Avatar" style="width:100%">
                                         <div class="mycard_container">
@@ -77,7 +83,7 @@
                                 </a>
                             </div>
                             <div class="col-md-3">
-                                <a href="#">
+                                <a href="new_product.jsp">
                                     <div class="mycard">
                                         <img class="mycard_img" src="com.fundamental/images/item/home_category/Sweets/p2.jpg" alt="Avatar" style="width:100%">
                                         <div class="mycard_container">
@@ -88,7 +94,7 @@
                                 </a>
                             </div>
                             <div class="col-md-3">
-                                <a href="#">
+                                <a href="new_product.jsp">
                                     <div class="mycard">
                                         <img class="mycard_img" src="com.fundamental/images/item/home_category/Sweets/p3.jpg" alt="Avatar" style="width:100%">
                                         <div class="mycard_container">
@@ -99,7 +105,7 @@
                                 </a>
                             </div>
                             <div class="col-md-3">
-                                <a href="#">
+                                <a href="new_product.jsp">
                                     <div class="mycard">
                                         <img class="mycard_img" src="com.fundamental/images/item/home_category/Sweets/p1.jpg" alt="Avatar" style="width:100%">
                                         <div class="mycard_container">
@@ -110,7 +116,7 @@
                                 </a>
                             </div>
                             <div class="col-md-3">
-                                <a href="#">
+                                <a href="new_product.jsp">
                                     <div class="mycard">
                                         <img class="mycard_img" src="com.fundamental/images/item/home_category/Sweets/p2.jpg" alt="Avatar" style="width:100%">
                                         <div class="mycard_container">
@@ -121,7 +127,7 @@
                                 </a>
                             </div>
                             <div class="col-md-3">
-                                <a href="#">
+                                <a href="new_product.jsp">
                                     <div class="mycard">
                                         <img class="mycard_img" src="com.fundamental/images/item/home_category/Sweets/p3.jpg" alt="Avatar" style="width:100%">
                                         <div class="mycard_container">
@@ -132,7 +138,7 @@
                                 </a>
                             </div>
                             <div class="col-md-3">
-                                <a href="#">
+                                <a href="new_product.jsp">
                                     <div class="mycard">
                                         <img class="mycard_img" src="com.fundamental/images/item/home_category/Sweets/p1.jpg" alt="Avatar" style="width:100%">
                                         <div class="mycard_container">
@@ -143,7 +149,7 @@
                                 </a>
                             </div>
                             <div class="col-md-3">
-                                <a href="#">
+                                <a href="new_product.jsp">
                                     <div class="mycard">
                                         <img class="mycard_img" src="com.fundamental/images/item/home_category/Sweets/p2.jpg" alt="Avatar" style="width:100%">
                                         <div class="mycard_container">
@@ -154,7 +160,7 @@
                                 </a>
                             </div>
                             <div class="col-md-3">
-                                <a href="#">
+                                <a href="new_product.jsp">
                                     <div class="mycard">
                                         <img class="mycard_img" src="com.fundamental/images/item/home_category/Sweets/p3.jpg" alt="Avatar" style="width:100%">
                                         <div class="mycard_container">

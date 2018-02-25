@@ -6,6 +6,13 @@
 
 
 
+<%
+    HttpSession httpSession_all_roles = request.getSession();
+    httpSession_all_roles.setAttribute("page_title", "all_roles");
+%>
+
+
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>

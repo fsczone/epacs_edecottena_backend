@@ -4,6 +4,13 @@
     Author     : Buddhi
 --%>
 
+
+<%
+    HttpSession httpSession_order = request.getSession();
+    httpSession_order.setAttribute("page_title", "order");
+%>
+
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -78,18 +85,20 @@
                                                     <table class="table">
                                                         <thead>
                                                             <tr><th class="text-center">Order ID</th>
-                                                                <th>Customer Name</th>
-                                                                <th>Email</th>
-                                                                <th class="text-center">Registration Date</th>
+                                                                <th>Customer ID</th>
+                                                                <th class="text-center">Order Date</th>
+                                                                <th class="text-center">Deliver Date</th>
+                                                                <th class="text-center">Shipping Date</th>
                                                                 <th class="text-center">Status</th>
                                                                 <th class="text-center">Action</th>
                                                             </tr></thead>
                                                         <tbody>
                                                             <tr>
                                                                 <td class="text-center">100 001</td>
-                                                                <td>irwanc</td>
-                                                                <td>irwanc65@gmail.com</td>
+                                                                <td>1566</td>
                                                                 <td class="text-center">2018-02-16</td>
+                                                                <td class="text-center">2018-02-18</td>
+                                                                <td class="text-center">2018-02-17</td>
                                                                 <td class="text-center">
                                                                     <span class="label-rounded btn-success">Complete</span>
                                                                 </td>
@@ -104,9 +113,10 @@
                                                             </tr>
                                                             <tr>
                                                                 <td class="text-center">100 002</td>
-                                                                <td>miguelgx</td>
-                                                                <td>miguelgx@gmail.com</td>
-                                                                <td class="text-center">2018-02-15</td>
+                                                                <td>4866</td>
+                                                                <td class="text-center">2018-01-13</td>
+                                                                <td class="text-center">2018-02-20</td>
+                                                                <td class="text-center">2018-02-17</td>
                                                                 <td class="text-center">
                                                                     <span class="label-rounded btn-info">Processing</span>
                                                                 </td>
@@ -121,9 +131,10 @@
                                                             </tr>
                                                             <tr>
                                                                 <td class="text-center">100 003</td>
-                                                                <td>suckit</td>
-                                                                <td>suckit@suck.it</td>
-                                                                <td class="text-center">2018-02-15</td>
+                                                                <td>2335</td>
+                                                                <td class="text-center">2018-02-01</td>
+                                                                <td class="text-center">2018-02-09</td>
+                                                                <td class="text-center">2018-02-07</td>
                                                                 <td class="text-center">
                                                                     <span class="label-rounded btn-info">Processing</span>
                                                                 </td>
@@ -161,8 +172,8 @@
             </div>
         </div>
 
-<!--        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
+        <!--        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="crossorigin="anonymous"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
 
         <script src="com.fundamental/vendor/jquery/jquery.min.js"></script>
         <script src="com.fundamental/vendor/popper.js/popper.min.js"></script>

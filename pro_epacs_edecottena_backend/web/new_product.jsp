@@ -4,6 +4,13 @@
     Author     : Buddhi
 --%>
 
+
+<%
+    HttpSession httpSession_new_product = request.getSession();
+    httpSession_new_product.setAttribute("page_title", "new_product");
+%>
+
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -100,6 +107,18 @@
                                                         <div class="form-group">
                                                             <label for="normal-input" class="form-control-label">Info</label>
                                                             <input class="form-control" placeholder="English">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="normal-input" class="form-control-label">Width</label>
+                                                            <input class="form-control" placeholder="(mm)">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="normal-input" class="form-control-label">Height</label>
+                                                            <input class="form-control" placeholder="(mm)">
                                                         </div>
                                                     </div>
                                                     <div class="col-md-12">

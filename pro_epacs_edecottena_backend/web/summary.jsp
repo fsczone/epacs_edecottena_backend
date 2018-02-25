@@ -4,6 +4,13 @@
     Author     : Buddhi
 --%>
 
+
+<%
+    HttpSession httpSession_summary = request.getSession();
+    httpSession_summary.setAttribute("page_title", "summary");
+%>
+
+
 <!doctype html>
 <html lang="en">
     <head>
