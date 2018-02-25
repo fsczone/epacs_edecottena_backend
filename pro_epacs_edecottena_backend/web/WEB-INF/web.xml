@@ -6,7 +6,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>co_add_catagory</servlet-name>
-        <url-pattern>/co_add_catagory</url-pattern>
+        <url-pattern>/co_add_catagory.fsc</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

@@ -10,12 +10,7 @@ function fu_config_createJSON(dot_class_name) {
             item ["val"] = valuex;
             rdata_json.push(item);
         });
-
-//    alert($('#in_catagory_status').is(':checked'));
-
-    //alert("jsonObj:" + jsonObj[2].val_input);
-
-
-    return rdata_json;
+        var s_rdata_json=JSON.stringify(rdata_json);
+    return s_rdata_json;
 }
 

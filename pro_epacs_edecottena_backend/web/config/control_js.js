@@ -14,7 +14,7 @@ var rdata_fc="";
 
         $.getScript('controller_js/js_catagory/js_ajax_addCategory.js', function () {
 
-            rdata_fc=fu_add_catagory(data_object);
+            fu_add_catagory(data_object);
             
         });
 

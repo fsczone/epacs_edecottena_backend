@@ -303,16 +303,12 @@
         <script>
                                                                 $(document).ready(function () {
                                                                     $("#bt_save_product").click(function () {
-//                                                                        
-                                                                        $.getScript('config/control_js.js', function ()
-                                                                        {
-                                                                            var JsonObject = [];
-                                                                            $.getScript('config/config_create_json.js', function ()
-                                                                            {
+                                                                        $.getScript('config/control_js.js', function (){
+                                                                            var JsonObject = "";
+                                                                            $.getScript('config/config_create_json.js', function (){
                                                                                 JsonObject = fu_config_createJSON(".fsczone_cat_save");
-//                                                                                
-                                                                                var su = fu_catagory("save", JsonObject);
-                                                                                alert(su);
+                                                                                
+                                                                                fu_catagory("save", JsonObject);
                                                                             });
                                                                         });
                                                                     });
